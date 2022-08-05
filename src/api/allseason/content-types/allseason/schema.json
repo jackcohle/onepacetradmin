@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "allseasons",
+  "info": {
+    "singularName": "allseason",
+    "pluralName": "allseasons",
+    "displayName": "allseason",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name_season": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "number_season": {
+      "type": "biginteger"
+    },
+    "manga": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "anime_ep": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "resolution": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "total_episode": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "progress": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name_season"
+    },
+    "desc": {
+      "type": "richtext",
+      "required": true
+    },
+    "total_duration": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "status": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "allepisodes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::allepisode.allepisode",
+      "mappedBy": "allseason"
+    }
+  }
+}

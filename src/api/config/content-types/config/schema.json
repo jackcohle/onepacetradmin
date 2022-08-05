@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "configs",
+  "info": {
+    "singularName": "config",
+    "pluralName": "configs",
+    "displayName": "config",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "author_text": {
+      "type": "string",
+      "required": true
+    },
+    "author_url": {
+      "type": "string",
+      "required": true
+    },
+    "support_text": {
+      "type": "string",
+      "required": true
+    },
+    "support_url": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

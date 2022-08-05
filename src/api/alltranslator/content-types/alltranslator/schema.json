@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alltranslators",
+  "info": {
+    "singularName": "alltranslator",
+    "pluralName": "alltranslators",
+    "displayName": "alltranslator",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name_translator": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "url": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "allepisodes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::allepisode.allepisode",
+      "mappedBy": "alltranslators"
+    }
+  }
+}

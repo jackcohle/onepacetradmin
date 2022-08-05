@@ -1,0 +1,101 @@
+{
+  "kind": "collectionType",
+  "collectionName": "allepisodes",
+  "info": {
+    "singularName": "allepisode",
+    "pluralName": "allepisodes",
+    "displayName": "allepisode",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "allseason": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::allseason.allseason",
+      "inversedBy": "allepisodes"
+    },
+    "name_episode": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "number_episode": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
+    "manga": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "anime_ep": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "resolution": {
+      "type": "string",
+      "required": true
+    },
+    "duration": {
+      "type": "string",
+      "required": true
+    },
+    "progress": {
+      "type": "string",
+      "required": true
+    },
+    "notes": {
+      "type": "richtext",
+      "required": true
+    },
+    "is_notes": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name_episode",
+      "required": true
+    },
+    "desc": {
+      "type": "richtext",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "alltranslators": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::alltranslator.alltranslator",
+      "inversedBy": "allepisodes"
+    },
+    "gdrive_player": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "clone_player": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "sibnet_player": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
