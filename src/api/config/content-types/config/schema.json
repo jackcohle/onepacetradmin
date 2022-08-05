@@ -38,6 +38,16 @@
     },
     "maintenance": {
       "type": "boolean"
+    },
+    "one_pace_link_text": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "onepace_link_url": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   }
 }
