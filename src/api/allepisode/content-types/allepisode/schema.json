@@ -85,17 +85,17 @@
     "gdrive_player": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "clone_player": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "sibnet_player": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     }
   }
 }
