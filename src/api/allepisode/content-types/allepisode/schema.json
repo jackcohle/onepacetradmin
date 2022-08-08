@@ -21,7 +21,7 @@
     "name_episode": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "number_episode": {
       "type": "biginteger",
