@@ -21,12 +21,12 @@
     "name_episode": {
       "type": "string",
       "required": true,
-      "unique": false
+      "unique": true
     },
     "number_episode": {
       "type": "biginteger",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "manga": {
       "type": "string",
