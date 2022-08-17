@@ -50,11 +50,16 @@
       "unique": true
     },
     "logo_dark": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "copyright": {
+      "type": "richtext",
+      "required": false
     }
   }
 }
