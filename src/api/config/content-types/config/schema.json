@@ -48,6 +48,13 @@
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "logo_dark": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
