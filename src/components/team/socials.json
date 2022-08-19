@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_team_socials",
+  "info": {
+    "displayName": "socials",
+    "icon": "hand-middle-finger",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "string",
+      "required": true
+    },
+    "icon_name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

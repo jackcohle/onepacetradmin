@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_team_jobs",
+  "info": {
+    "displayName": "jobs",
+    "icon": "business-time",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name_job": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
