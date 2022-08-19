@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_contact_socials",
+  "info": {
+    "displayName": "socials",
+    "icon": "cat",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "icon_name": {
+      "type": "string",
+      "required": true
+    },
+    "icon_url": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
