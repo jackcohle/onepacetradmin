@@ -60,6 +60,11 @@
     "copyright": {
       "type": "richtext",
       "required": false
+    },
+    "maintenance_text": {
+      "type": "string",
+      "required": true,
+      "default": "Yapım Aşamasında"
     }
   }
 }
