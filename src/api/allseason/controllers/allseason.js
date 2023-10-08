@@ -15,6 +15,11 @@ module.exports = createCoreController('api::allseason.allseason', ({strapi}) => 
         const entity = await strapi.db.query('api::allseason.allseason').findOne({
             where: {slug: id},
             populate: {
+                image: {
+                    populate: {
+                        fields: ['*'],
+                    }
+                },
                 allepisodes: {
                     populate: {
                         image: {
