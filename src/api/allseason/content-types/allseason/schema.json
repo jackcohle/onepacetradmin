@@ -49,6 +49,14 @@
       "type": "uid",
       "targetField": "name_season"
     },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
     "desc": {
       "type": "richtext",
       "required": true
