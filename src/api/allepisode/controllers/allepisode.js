@@ -21,6 +21,11 @@ module.exports = createCoreController('api::allepisode.allepisode', ({strapi}) =
                 allseason: {
                     populate: {
                         fields: ['*'],
+                        allepisodes: {
+                            populate: {
+                                fields: ['*'],
+                            }
+                        }
                     }
                 },
                 alltranslators: {
