@@ -62,7 +62,8 @@
     "slug": {
       "type": "uid",
       "targetField": "name_episode",
-      "required": true
+      "required": true,
+      "unique": false
     },
     "desc": {
       "type": "richtext",
