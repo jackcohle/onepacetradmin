@@ -13,7 +13,10 @@ module.exports = createCoreController('api::allseason.allseason', ({strapi}) => 
         const {id} = ctx.params;
 
         const entity = await strapi.db.query('api::allseason.allseason').findOne({
-            where: {slug: id}
+            where: {slug: id},
+            populate: {
+                fields: ['*']
+            }
         });
         const sanitizedEntity = await this.sanitizeOutput(entity, ctx);
 
