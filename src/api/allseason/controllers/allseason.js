@@ -8,9 +8,7 @@
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::allseason.allseason');
-
-/* module.exports = createCoreController('api::allseason.allseason', ({strapi}) => ({
+module.exports = createCoreController('api::allseason.allseason', ({strapi}) => ({
     async findOne(ctx) {
         const {id} = ctx.params;
 
@@ -47,4 +45,4 @@ module.exports = createCoreController('api::allseason.allseason');
 
         return this.transformResponse(sanitizedEntity);
     }
-})); */
+}));
