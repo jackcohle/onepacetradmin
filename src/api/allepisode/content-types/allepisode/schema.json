@@ -99,7 +99,21 @@
       "unique": false
     },
     "filemoon_player": {
-      "defaultValue": "#",
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "vidguard_player": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "wolfstream_player": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "streamvid_player": {
       "type": "string",
       "required": false,
       "unique": false
