@@ -90,12 +90,18 @@
     },
     "clone_player": {
       "type": "string",
-      "required": true,
+      "required": false,
       "unique": false
     },
     "sibnet_player": {
       "type": "string",
       "required": true,
+      "unique": false
+    },
+    "filemoon_player": {
+      "defaultValue": "#",
+      "type": "string",
+      "required": false,
       "unique": false
     }
   }
